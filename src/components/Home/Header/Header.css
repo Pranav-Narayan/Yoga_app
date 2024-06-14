@@ -1,0 +1,48 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 120px;
+    padding: 40px 0;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+}
+.logo img{
+    width: 3rem;
+}
+.logo h3{
+    font-family:Nunito ;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.navitems{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-family: poppins;
+}
+.navitems li{
+    font-size: 14px;
+    position: relative;
+    cursor: pointer;
+}
+.navitems li::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.707);
+    position: absolute;
+    left: 0;
+    top: 20px;
+    transform: scale(0);
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.navitems li:hover::after{
+    transform: scale(1);
+}
